@@ -1,0 +1,41 @@
+﻿<Window x:Class="CognexPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cognex Player" Height="641" Width="683" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Device IP Adress:" Height="28" HorizontalAlignment="Left" Margin="42,21,0,0" Name="labelDeviceIP" VerticalAlignment="Top" Width="104" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="152,23,0,0" Name="textBoxDeviceIPAddress" VerticalAlignment="Top" Width="203" Text="{Binding DeviceIpAdress, Mode=TwoWay}" TextChanged="TextChanged_DeviceIpAddress"/>
+        <Button Content="{Binding ConnectContent, Mode=TwoWay}" Foreground="{Binding ConnectForeground, Mode=TwoWay}" Height="23" HorizontalAlignment="Left" Margin="492,23,0,0" Name="buttonConnect" VerticalAlignment="Top" Width="75" Click="ButtonConnect_Click" />
+        <Label Content="Command:" Height="28" HorizontalAlignment="Left" Margin="42,79,0,0" Name="labelCommand" VerticalAlignment="Top" Width="68" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="152,84,0,0" Name="textBoxCommand" VerticalAlignment="Top" Width="203" Text="{Binding DeviceCommand, Mode=TwoWay}" Background="{Binding DeviceCommandBackground, Mode=TwoWay}" TextChanged="TextBoxCommand_TextChanged" />
+        <Button Content="Send" Height="23" HorizontalAlignment="Left" Margin="394,80,0,0" Name="buttonSend" VerticalAlignment="Top" Width="75" Click="ButtonSend_Click" />
+        <Label Content="Response:" Height="28" HorizontalAlignment="Left" Margin="42,127,0,0" Name="labelResponse" VerticalAlignment="Top" Width="68" />
+        <TextBox Height="171" HorizontalAlignment="Left" Margin="147,128,0,0" Name="textBoxResponse" VerticalAlignment="Top" Width="322" Text="{Binding Response, Mode=TwoWay}" IsReadOnly="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <Button Content="Discover" Height="23" HorizontalAlignment="Left" Margin="394,23,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="ButtonDiscover_Click"/>
+        <Label Content="Display Controls:" Height="28" HorizontalAlignment="Left" Margin="42,330,0,0" Name="label1" VerticalAlignment="Top" Width="104" />
+        <Label Content="Display IP:" Height="28" HorizontalAlignment="Left" Margin="42,364,0,0" Name="label2" VerticalAlignment="Top" Width="68" />
+        <TextBox IsEnabled="{Binding DisplayIPTextBoxEnabled, Mode=TwoWay}" Height="23" HorizontalAlignment="Left" Margin="147,366,0,0" Name="textBoxDispayIPAddress" VerticalAlignment="Top" Width="208" Text="{Binding DisplayIPAddress, Mode=TwoWay}"/>
+        <Button Content="{Binding ConnectDisplayContent, Mode=TwoWay}" Foreground="{Binding ConnectDisplayForeground, Mode=TwoWay}" Height="23" HorizontalAlignment="Right" Margin="0,366,197,0" Name="buttonConnectDisplay" VerticalAlignment="Top" Width="75" Click="ButtonConnectDisplay_Click" />
+        <RadioButton Checked="RadioButton_Checked" GroupName="DisplayPage" Content="Pass" Height="22" HorizontalAlignment="Left" Margin="147,407,0,0" Name="radioButtonPass" VerticalAlignment="Top" IsChecked="True"/>
+        <RadioButton Checked="RadioButton_Checked" GroupName="DisplayPage" Content="Fail" Height="16" HorizontalAlignment="Left" Margin="258,407,0,0" Name="radioButtonFail" VerticalAlignment="Top" />
+        <RadioButton Checked="RadioButton_Checked" GroupName="DisplayPage" Content="Message" Height="16" HorizontalAlignment="Left" Margin="366,407,0,0" Name="radioButtonDisplayMessage" VerticalAlignment="Top" />
+        <RadioButton Checked="RadioButton_Checked" GroupName="DisplayPage" Content="Pass OK" Height="16" HorizontalAlignment="Left" Margin="147,428,0,0" Name="radioButton1" VerticalAlignment="Top" />
+        <RadioButton Checked="RadioButton_Checked" GroupName="DisplayPage" Content="Fail NG" Height="16" HorizontalAlignment="Left" Margin="258,428,0,0" Name="radioButton2" VerticalAlignment="Top" />
+        <RadioButton Checked="RadioButton_Checked" GroupName="DisplayPage" Content="Blue" Height="16" HorizontalAlignment="Left" Margin="366,428,0,0" Name="radioButtonBlue" VerticalAlignment="Top" />
+        <RadioButton Checked="RadioButton_Checked" GroupName="DisplayPage" Content="Read" Height="16" HorizontalAlignment="Left" Margin="147,450,0,0" Name="radioButtonRead" VerticalAlignment="Top" />
+        <RadioButton Checked="RadioButton_Checked" GroupName="DisplayPage" Content="ReadM" Height="16" HorizontalAlignment="Left" Margin="258,450,0,0" Name="radioButtonReadM" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="147,495,0,0" Name="textBoxDisplayMessage" VerticalAlignment="Top" Width="208" Text="{Binding DisplayMessageSet, Mode=TwoWay}"/>
+        <Label Content="Display Page:" Height="28" HorizontalAlignment="Left" Margin="42,402,0,0" Name="labelDisplayPage" VerticalAlignment="Top" />
+        <Label Content="Message:" Height="28" HorizontalAlignment="Left" Margin="42,490,0,0" Name="labelDisplayMessage" VerticalAlignment="Top" />
+        <Button Content="Set" Height="23" HorizontalAlignment="Left" Margin="394,494,0,0" Name="buttonSetDisplayMessage" VerticalAlignment="Top" Width="75" Click="ButtonSetDisplayMessage_Click" />
+        <Label Content="Number of buttons:" Height="28" HorizontalAlignment="Left" Margin="492,330,0,0" Name="label3" VerticalAlignment="Top" />
+        <RadioButton Checked="RadioButtonNoB_Checked" Content="No Buttons" GroupName="ButtonPage" Height="16" HorizontalAlignment="Left" Margin="492,364,0,0" Name="radioButtonNoButton" VerticalAlignment="Top" />
+        <RadioButton Checked="RadioButtonNoB_Checked" Content="1 Button" GroupName="ButtonPage" Height="16" HorizontalAlignment="Left" Margin="492,398,0,0" Name="radioButton1Button" VerticalAlignment="Top" />
+        <RadioButton Checked="RadioButtonNoB_Checked" Content="2 Buttons" GroupName="ButtonPage" Height="16" HorizontalAlignment="Left" Margin="492,428,0,0" Name="radioButton2Button" VerticalAlignment="Top" />
+        <RadioButton Checked="RadioButtonNoB_Checked" Content="3 Buttons" GroupName="ButtonPage" Height="16" HorizontalAlignment="Left" Margin="492,458,0,0" Name="radioButton3Button" VerticalAlignment="Top" IsChecked="True"/>
+        <Label Content="Scanner On/Off" Height="28" HorizontalAlignment="Left" Margin="492,128,0,0" Name="labelScannerOnOff" VerticalAlignment="Top" Width="114" />
+        <RadioButton GroupName="ScannerOnOffGroup" Content="On" Checked="RadioButtonScannerOnOff_Checked" Height="16" HorizontalAlignment="Left" Margin="492,162,0,0" Name="radioButtonScannerOn" VerticalAlignment="Top"  IsChecked="True"/>
+        <RadioButton GroupName="ScannerOnOffGroup" Content="Off" Checked="RadioButtonScannerOnOff_Checked" Height="16" HorizontalAlignment="Left" Margin="492,184,0,0" Name="radioButtonScannerOff" VerticalAlignment="Top" />
+        <Button Content="Select Config" Height="23" HorizontalAlignment="Left" Margin="493,225,0,0" Name="buttonSelectConfig" VerticalAlignment="Top" Width="113" Click="buttonSelectConfig_Click" />
+    </Grid>
+</Window>

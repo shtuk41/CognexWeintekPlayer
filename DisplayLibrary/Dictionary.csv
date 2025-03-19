@@ -1,0 +1,81 @@
+﻿ failed|失败
+ passed|通过
+ remaining.|剩余
+ to unload.|卸下
+/|/
+-->|-->
+Abort|退出
+Cartridge Emptier|卡盒清空人
+Cartridge Filler|卡盒填充人
+Cartridge not correct|卡盒不正确
+Cartridge not empty|卡盒非空
+Cartridge not evaluated|卡盒未评估
+Fixture Filler|夹具填充人
+Fixture not empty|夹具非空
+Great, now volumax it|好，现在volumax它
+Not a cartridge|非卡盒
+Not a fixture|非夹具
+Not a part|非部件
+Not a slot|非插槽
+Now scan the cartridge for slot |现在扫描卡盒插槽
+OK|OK
+Part|部件 
+Part already in use|部件已在使用中
+Parts in wrong order, unload|部件顺序错误，卸载
+Press OK to unload another cartridge|按OK键卸载另一个卡盒
+Scan a cartridge to start emptying it|扫描卡盒开始排空
+Scan a cartridge to start loading it|扫描卡盒开始加载
+Scan a fixture to start loading it|扫描夹具开始加载
+Scan a part|扫描部件
+Scan part|扫描部件 
+Scan slot|扫描插槽
+Slot not correct|插槽不正确
+Something has gone wrong.  Call your supervisor|出了问题。通知上级
+Thanks, hand it off|谢谢，把它关闭
+TestingSize|顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺顺
+BTN1TEXT|非
+BTN2TEXT|插
+BTN3TEXT|槽
+Nap time|休息
+Scan a part3 remaining.|扫描部件, 还有3
+Scan a part2 remaining.|扫描部件, 还有2
+Scan a part1 remaining.|扫描部件, 还有1
+Rescan cartridge to complete|重新扫描卡盒去完成
+Scan a cartridge first!  That part has been ignored|先扫描卡盒, 部件忽略
+Do not scan fixtures at this workstation!|此工作站不扫描夹具
+Fixture FillerScan a fixture to start loading it|夹具填充人扫描夹具开始加载
+Now scan the cartridge for slot1|现在扫描卡盒插槽1
+Now scan the cartridge for slot2|现在扫描卡盒插槽2
+Now scan the cartridge for slot3|现在扫描卡盒插槽3
+Now scan the cartridge for slot4|现在扫描卡盒插槽4
+That cartridge is in use elsewhere; put it back where you found it.|卡盒已在他方使用;把它放回
+Do not scan fixture slots at this workstation!|在此工作站不要扫描插槽
+The cartridge has been reset; place parts back in the in-tray|卡盒已复位,部件放回
+That part is already loaded elsewhere.  Put it back where you found it.Cartridge Reset|部件已在他方加载,把它放回
+Finish filling cartridge.Cartridge Reset|填完卡盒,卡盒复位
+Do not scan fixtures at this workstation!Ignored|在此工作站不要扫描夹具！忽略
+Do not scan fixture slots at this workstation!Ignored|在此工作站不要扫描插槽！忽略
+The cartridge was already full, but now it's been reset|卡盒已满，但现在它已经复位
+Wrong CartridgeThe one you were working on has been reset|卡盒错误,正在用的卡盒复位
+Fixture FillerScan a fixture to start filling it|扫描夹具开始填充
+Do not scan parts at this workstation!|在此工作站不要扫描部件！
+Scan the fixture first|首先扫描夹具
+Nope.|没有
+The fixture has been reset.|夹具已经复位。
+Do not scan parts at this workstation!The part was ignored.|不要在此扫描部件！部件忽略
+Scan the slot first!Fixture Resets|首先扫描插槽！夹具复位
+You should have scanned a slot.Fixture Resets|首先扫描插槽！夹具复位
+Wrong slot.Fixture Resets|插槽错误.夹具复位
+Great, ready for volumax|好，准备volumax
+You should have scanned a Cartridge.The fixture has been reset.|你应该扫描卡盒.夹具已复位
+Do not scan cartridges at this workstation!|在此工作站不要扫描卡盒！
+badness|不良
+Do not scan cartridge clots at this workstation!|在此工作站不要扫描插槽!
+Cartridge EmptierScan a cartridge to start emptying it|扫描卡盒开始清空
+Scan a cartridge first|首先扫描卡盒
+Cartridge no ready for unloading|卡盒没有做好清空准备
+Cartridge EmptierScan part 1|卡盒清空人,扫描部件1
+Scan parts!Ignored|扫描部件！忽略
+Scan parts!Cartridge reset|扫描部件！卡盒复位
+Working on |工作中
+Cartridge FillerScan a cartridge to start loading it|卡盒填充人扫描卡盒开始加载
